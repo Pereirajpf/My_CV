@@ -1,0 +1,217 @@
+% !TEX TS-program = XeLaTex
+% CV2 - My new curriculum vitae
+%09/2022
+%by: João Pereira
+
+\documentclass[11pt,oneside,a4paper,titlepage]{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{libertine}
+
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage[margin=6em]{geometry}
+\usepackage{array}	%For struts
+\usepackage{fontspec}
+\usepackage{fontawesome5}	%For icons
+\usepackage{fancyhdr}	%footers
+
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{hyperref} 	%url
+\hypersetup{colorlinks=false}
+
+
+%TO REMOVE
+\usepackage{lipsum}
+
+
+%INFO
+\author{João Pereira}
+\date{October 2022}
+
+%Colors
+%\definecolor{titleBack}{RGB}{0,66,21}
+\definecolor{titleBack}{RGB}{255, 255, 255}
+\definecolor{SecText}{RGB}{59,122,87} %Amazon green
+\definecolor{textGrey}{RGB}{128, 128, 128}
+
+%Struts
+\newcolumntype{L}{>{\raggedleft}p{0.13\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{black}\vrule width 0.5pt}
+% for publications
+\newcolumntype{N}{>{\centering\raggedleft}p{0.12\textwidth}}
+\newcolumntype{P}{p{0.88\textwidth}}
+
+%Rule between columns
+%\setlength{\columnseprule}{1pt}
+%\def\columnseprulecolor{\color{grey}}
+
+%Defenitions
+\renewcommand{\maketitle}
+{\begin{center}
+{\Huge\scshape\textbf\theauthor}
+\vspace{0.25em}
+\begin{multicols}{2}
+\raggedright
+	\textcolor{SecText}{\faIcon{envelope}} pereira.jpf96@gmail.com\\
+	\textcolor{SecText}{\faIcon{phone}} 966 246 182\\
+	\textcolor{SecText}{\faIcon{at}}\href{https://pereirajpf.github.io/}{ pereirajpf.github.io}\\
+	\columnbreak
+	\textcolor{SecText}{\faIcon{github}} \href{https://github.com/Pereirajpf}{github.com/Pereirajpf}\\
+	\textcolor{SecText}{\faIcon{orcid}} \href{https://orcid.org/0000-0001-9937-6144}{0000-0001-9937-6144}\\
+	\textcolor{SecText}{\faIcon{linkedin}} \href{https://www.linkedin.com/in/jo\%C3\%A3o-pereira-31692a251}{/joão-pereira-31692a251}\\
+\end{multicols}
+\textcolor{SecText}{\rule{0.9\textwidth}{0.1cm}}
+\end{center}
+}
+
+
+\titleformat{\section}[hang]
+{\Large\color{SecText}}
+{}
+{0em}
+{\bfseries\uppercase}
+
+\titlespacing*{\section}
+{0pt}{1cm}{0.2cm}
+
+\titleformat{\subsection}
+{\bfseries}
+{\hspace{-0.4em}}
+{0.2em}
+{}[]
+
+\titleformat{\subsubsection}[runin]
+{\normalsize}
+{}
+{0em}
+{\normalfont}[ -- \hspace{1em}]
+
+\titlespacing{\subsubsection}
+{2em}{0.25em}{0em}
+
+%Biblio
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+
+\usepackage[backend=bibtex,,doi=true,bibstyle = mla, citestyle=verbose]{biblatex}
+\addbibresource{Biblio.bib}
+%
+\DeclareFieldFormat{doi}{%
+    \small%
+  \mkbibacro{DOI}\addcolon\space
+  \ifhyperref
+    {\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}
+
+%==========MAIN==========
+\begin{document}
+
+%footer
+\pagestyle{fancy}
+\fancyfoot[LE,RO]{\textcolor{textGrey}{Avaliable at: \href{https://github.com/Pereirajpf/My_CV}{/Pereirajpf/My$\_$CV}}}
+\fancyfoot[CO,RE]{\textcolor{textGrey}{\thepage}}
+\fancyfoot[LO,CE]{\textcolor{textGrey}{last updated: \thedate}}
+%Title box
+
+\maketitle
+
+\section{Education}
+
+\begin{tabular}{L!{\VRule}R}
+2019 - 2022 & \textbf{Master's degree in Bioinformatics and Applications to Life Sciences},\\
+& \textit{University of Trás-os-Montes and Alto Douro (Portugal)}.\\
+& Final grade: 16\\
+[8mm]
+2015 - 2019 & \textbf{Batcheler's degree in Biochemistry},\\
+& \textit{University of Trás-os-Montes and Alto Douro (Portugal)}.\\
+& Final grade: 13\\
+\end{tabular}
+
+
+%====
+\section{Technical Skills}
+\subsection{\faIcon{code}  Programming}
+\textcolor{textGrey}{\textbf{Intermediate knowledge}}
+\subsubsection{R}
+Statistical analysis, mathematical models, OOP, package development, Shiny.
+\subsubsection{Python}
+Statistical Analysis with Pandas, OOP, basic machine learning using TensorFlow and Keras.
+\\[2mm]
+\textcolor{textGrey}{\textbf{Basic knowledge}}\\
+ \indent {C, Java, Matlab, SQL, Arduino.}
+
+\subsection{\faIcon{indent}  Typesetting}
+ \quad \LaTeX, Markdown.
+
+\subsection{\faIcon{tools}  Tools}
+ \quad Power BI, Windows and Linux, Intermediate Microsoft Office  and LibreOffice.
+
+\subsection{\faIcon{language}  Languages}
+\subsubsection{Portuguese}
+native speaker
+\subsubsection{English}
+B2
+
+%====
+\section{Academic/Scientific work}
+\subsection{\faIcon{hand-holding-usd}  Funding}
+\subsubsection{Research Grant}
+Projeção do impacte das medidas não-farmacológicas de controlo e mitigação da epidemia de COVID-19 em tempo real (COVID-19 in-CTRL),
+Grant number: Projeto nº 692 2ª edição do RESEARCH4COVID, FCT, Portugal.
+
+%
+\subsection{\faIcon{trophy}  Distinctions}
+\subsubsection{Best Porster}
+Portuguese National Statistics Meeting (SPE21), Evora 2021.
+
+%
+\subsection{\faIcon{file-alt}  Publications}
+\begin{tabular}{N P}
+[May 2021] & Mathematical Modelling of the Impact of Non-Pharmacological Strategies to Control the COVID-19 Epidemic in Portugal;\\
+& \textit{Constantino Caetano, Maria Morgado, Paula Patrício, João Pereira, Baltazar Nunes};\\
+& doi:\href{https://doi.org/10.3390/math9101084}{10.3390/math9101084}\\
+\end{tabular}
+\\
+\begin{tabular}{N P}
+[Nov 2021] & The impact of vaccination on the evolution of COVID-19 in Portugall;\\
+& \textit{Beatriz Machado, Liliana Antunes, Constantino Caetano, João F. Pereira, Baltazar Nunes, Paula Patrício, M. Luísa Morgado};\\
+& doi:\href{https://doi.org/10.3934/mbe.2022043}{10.3934/mbe.2022043}\\
+\end{tabular}
+\\
+\\
+\textcolor{textGrey}{\textbf{Preprints}}
+\\
+\begin{tabular}{N P}
+[Dec 2021] & Measuring the impact of COVID-19 vaccination and immunity waning: a modelling study for Portugal;\\
+& \textit{Constantino Caetano, Maria Luísa Morgado, Paula Patrício, Andreia Leite, Ausenda Machado, André Torres, João Freitas Pereira, Sónia Namorado, Ana Sottomayor, André Peralta, Baltazar Nunes};\\
+& doi:\href{https://doi.org/10.1101/2021.12.10.21267618}{10.1101/2021.12.10.21267618}\\
+\end{tabular}
+\\
+\begin{tabular}{N P}
+[Mar 2022] & COVID-19 Hospitalisation in Portugal, the first year: Results from hospital discharge data;\\
+& \textit{João F. Pereira, Constantino Caetano, Liliana Antunes, Paula Patrício, Maria Luísa Morgado, Baltazar Nunes};\\
+& doi:\href{https://doi.org/10.1101/2022.03.03.22271349}{10.1101/2022.03.03.22271349}\\
+\end{tabular}
+
+%
+\subsection{\faIcon{archive}  Other works}
+
+\subsubsection{Poster presentation}
+\textit{Portuguese National Statistics Meeting (SPE 2021), Évora (13–16 Outubro, 2021).}\\
+title: ''COVID-19 Hospitalization in Portugal: Results from hospital discharge data''\\
+
+\subsubsection{Seminar presentation}
+\textit{Ciclo de Seminários em Matemática Aplicada e Ciência de Dados (CS-MACD).}\\
+title: ''Análise de dados COVID-19 em Portugal'', 7 de October 2022, UTAD.\\
+link: \href{https://sites.google.com/view/cs-macd/home}{https://sites.google.com/view/cs-macd/home}\\
+
+
+\end{document}
