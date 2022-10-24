@@ -6,14 +6,12 @@
 \documentclass[11pt,oneside,a4paper,titlepage]{article}
 
 \usepackage[most]{tcolorbox}
-\usepackage{libertine}
 
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{multicol}
 \usepackage[margin=6em]{geometry}
 \usepackage{array}	%For struts
-\usepackage{fontspec}
 \usepackage{fontawesome5}	%For icons
 \usepackage{fancyhdr}	%footers
 
@@ -23,7 +21,18 @@
 \usepackage{hyperref} 	%url
 \hypersetup{colorlinks=false}
 
+%Font
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Cambria}
+\setsansfont[Ligatures=TeX]{Arial}
 
+%  \fontencoding{T1}
+ % \setmainfont{garamond}
+  %\fontseries{m}
+  %\fontshape{it}
+  %\fontsize{12}{15}
+  %\selectfont
+  
 %TO REMOVE
 \usepackage{lipsum}
 
@@ -50,10 +59,13 @@
 %\setlength{\columnseprule}{1pt}
 %\def\columnseprulecolor{\color{grey}}
 
+%For multirow in columns
+\usepackage{multirow}
+
 %Defenitions
 \renewcommand{\maketitle}
 {\begin{center}
-{\Huge\scshape\textbf\theauthor}
+{\Huge\bfseries\scshape\theauthor}
 \vspace{0.25em}
 \begin{multicols}{2}
 \raggedright
@@ -86,21 +98,15 @@
 {}[]
 
 \titleformat{\subsubsection}[runin]
-{\normalsize}
+{\normalsize\bfseries}
 {}
 {0em}
-{\normalfont}[ -- \hspace{1em}]
+{\normalfont\bfseries}[ -- \hspace{1em}]
 
 \titlespacing{\subsubsection}
 {2em}{0.25em}{0em}
 
 %Biblio
-\usepackage[T1]{fontenc}
-
-\usepackage[utf8]{inputenc}
-
-\usepackage{xcolor}
-
 \usepackage[backend=bibtex,,doi=true,bibstyle = mla, citestyle=verbose]{biblatex}
 \addbibresource{Biblio.bib}
 %
@@ -122,17 +128,25 @@
 %Title box
 
 \maketitle
+\vspace{-10mm}
+\section{Experience}
+\begin{tabular}{p{4mm} l}
+\multicolumn{2}{l}{\scriptsize\textit{\textcolor{textGrey}{Jul 2020 to May 2021}}}\\
+\multirow{2}*{\includegraphics[width=1.8\linewidth]{insa_logo.jpg}} & \textbf{Research fellowship},\\
+& \textit{Instituto Nacional de Saúde Doutor Ricardo Jorge (Portugal)},\\
+ &\scriptsize{Grant number: Projeto nº 692 2ª edição do RESEARCH4COVID, FCT, Portugal.}\\
+\end{tabular}
 
+%====
 \section{Education}
-
 \begin{tabular}{L!{\VRule}R}
-2019 - 2022 & \textbf{Master's degree in Bioinformatics and Applications to Life Sciences},\\
-& \textit{University of Trás-os-Montes and Alto Douro (Portugal)}.\\
-& Final grade: 16\\
+\small\textit{2019 - 2022} & \textbf{Master's degree in Bioinformatics and Applications to Life Sciences},\\
+\multirow{2}*{\includegraphics[width=0.4\linewidth]{utad_logo.jpg}} & \textit{University of Trás-os-Montes and Alto Douro (Portugal)},\\
+& \small{Final grade: 16.}\\
 [8mm]
-2015 - 2019 & \textbf{Batcheler's degree in Biochemistry},\\
-& \textit{University of Trás-os-Montes and Alto Douro (Portugal)}.\\
-& Final grade: 13\\
+\small\textit{2015 - 2019} & \textbf{Batcheler's degree in Biochemistry},\\
+\multirow{2}*{\includegraphics[width=0.4\linewidth]{utad_logo.jpg}} & \textit{University of Trás-os-Montes and Alto Douro (Portugal)},\\
+& \small{Final grade: 13.}\\
 \end{tabular}
 
 
@@ -152,7 +166,7 @@ Statistical Analysis with Pandas, OOP, basic machine learning using TensorFlow a
  \quad \LaTeX, Markdown.
 
 \subsection{\faIcon{tools}  Tools}
- \quad Power BI, Windows and Linux, Intermediate Microsoft Office  and LibreOffice.
+ \quad Power BI, Hugo framework, Windows and Linux, Intermediate Microsoft Office and LibreOffice.
 
 \subsection{\faIcon{language}  Languages}
 \subsubsection{Portuguese}
@@ -162,12 +176,7 @@ B2
 
 %====
 \section{Academic/Scientific work}
-\subsection{\faIcon{hand-holding-usd}  Funding}
-\subsubsection{Research Grant}
-Projeção do impacte das medidas não-farmacológicas de controlo e mitigação da epidemia de COVID-19 em tempo real (COVID-19 in-CTRL),
-Grant number: Projeto nº 692 2ª edição do RESEARCH4COVID, FCT, Portugal.
 
-%
 \subsection{\faIcon{trophy}  Distinctions}
 \subsubsection{Best Porster}
 Portuguese National Statistics Meeting (SPE21), Evora 2021.
@@ -186,14 +195,14 @@ Portuguese National Statistics Meeting (SPE21), Evora 2021.
 & doi:\href{https://doi.org/10.3934/mbe.2022043}{10.3934/mbe.2022043}\\
 \end{tabular}
 \\
+\begin{tabular}{N P}
+[Oct 2022] & Measuring the impact of COVID-19 vaccination and immunity waning: a modelling study for Portugal;\\
+& \textit{Constantino Caetano, Maria Luísa Morgado, Paula Patrício, Andreia Leite, Ausenda Machado, André Torres, João Freitas Pereira, Sónia Namorado, Ana Sottomayor, André Peralta, Baltazar Nunes};\\
+& doi:\href{https://doi.org/10.1016/j.vaccine.2022.10.007}{10.1016/j.vaccine.2022.10.007}\\
+\end{tabular}
+\\
 \\
 \textcolor{textGrey}{\textbf{Preprints}}
-\\
-\begin{tabular}{N P}
-[Dec 2021] & Measuring the impact of COVID-19 vaccination and immunity waning: a modelling study for Portugal;\\
-& \textit{Constantino Caetano, Maria Luísa Morgado, Paula Patrício, Andreia Leite, Ausenda Machado, André Torres, João Freitas Pereira, Sónia Namorado, Ana Sottomayor, André Peralta, Baltazar Nunes};\\
-& doi:\href{https://doi.org/10.1101/2021.12.10.21267618}{10.1101/2021.12.10.21267618}\\
-\end{tabular}
 \\
 \begin{tabular}{N P}
 [Mar 2022] & COVID-19 Hospitalisation in Portugal, the first year: Results from hospital discharge data;\\
