@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  24 OCT 2022 16:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  23 DEC 2022 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1461,8 +1461,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--224
  []
 
 [2] (CV_JPereira.aux)
-Package rerunfilecheck Info: File `CV_JPereira.out' has not changed.
-(rerunfilecheck)             Checksum: 5CA9D5B49A46F5B38D55370CA23A7EAD;2368.
+
+Package rerunfilecheck Warning: File `CV_JPereira.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV_JPereira.out':
+(rerunfilecheck)             Before: 5CA9D5B49A46F5B38D55370CA23A7EAD;2368
+(rerunfilecheck)             After:  4475EFF0B5ADFBCF5903B285AFDADE18;2363.
 Package logreq Info: Writing requests to 'CV_JPereira.run.xml'.
 \openout1 = `CV_JPereira.run.xml'.
 
