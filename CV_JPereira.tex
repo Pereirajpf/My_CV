@@ -39,7 +39,7 @@
 
 %INFO
 \author{João Pereira}
-\date{October 2022}
+\date{December 2022}
 
 %Colors
 %\definecolor{titleBack}{RGB}{0,66,21}
@@ -62,9 +62,17 @@
 %For multirow in columns
 \usepackage{multirow}
 
+%For foto in title
+\usepackage{graphicx}
+\usepackage{tikzpagenodes}
+
 %Defenitions
 \renewcommand{\maketitle}
 {\begin{center}
+
+
+%Make title with foto
+\begin{minipage}{0.60\textwidth}
 {\Huge\bfseries\scshape\theauthor}
 \vspace{0.25em}
 \begin{multicols}{2}
@@ -77,6 +85,11 @@
 	\textcolor{SecText}{\faIcon{orcid}} \href{https://orcid.org/0000-0001-9937-6144}{0000-0001-9937-6144}\\
 	\textcolor{SecText}{\faIcon{linkedin}} \href{https://www.linkedin.com/in/jo\%C3\%A3o-pereira-31692a251}{/joão-pereira-31692a251}\\
 \end{multicols}
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+\flushright{{\includegraphics[height=40mm]{myfoto.jpg}}}
+\end{minipage}
+
 \textcolor{SecText}{\rule{0.9\textwidth}{0.1cm}}
 \end{center}
 }
@@ -128,8 +141,21 @@
 %Title box
 
 \maketitle
-\vspace{-10mm}
+
+%====
+%Small introduction
+\vspace{2mm}
+\centerline{\begin{minipage}{0.85\textwidth}
+\large{
+\quad I'm a recent graduate in Bioinformatics with experience in \textbf{data analysis} and \textbf{programming}.\\ 
+\null \quad I'm always looking for something new and exciting to learn and also available to help my colleagues in any way I can. In this new stage of my life, I'm looking for a challenge and to enhance my technical and social skills in a diverse environment.
+}
+\end{minipage}}
+
+\vspace{-4mm}
+%====
 \section{Experience}
+\vspace{-2mm}
 \begin{tabular}{p{4mm} l}
 \multicolumn{2}{l}{\scriptsize\textit{\textcolor{textGrey}{Jul 2020 to May 2021}}}\\
 \multirow{2}*{\includegraphics[width=1.8\linewidth]{insa_logo.jpg}} & \textbf{Research fellowship},\\
@@ -137,8 +163,10 @@
  &\scriptsize{Grant number: Projeto nº 692 2ª edição do RESEARCH4COVID, FCT, Portugal.}\\
 \end{tabular}
 
+\vspace{-5mm}
 %====
 \section{Education}
+\vspace{-2mm}
 \begin{tabular}{L!{\VRule}R}
 \small\textit{2019 - 2022} & \textbf{Master's degree in Bioinformatics and Applications to Life Sciences},\\
 \multirow{2}*{\includegraphics[width=0.4\linewidth]{utad_logo.jpg}} & \textit{University of Trás-os-Montes and Alto Douro (Portugal)},\\
@@ -152,6 +180,7 @@
 
 %====
 \section{Technical Skills}
+\vspace{-2mm}
 \subsection{\faIcon{code}  Programming}
 \textcolor{textGrey}{\textbf{Intermediate knowledge}}
 \subsubsection{R}
@@ -221,6 +250,9 @@ title: ''COVID-19 Hospitalization in Portugal: Results from hospital discharge d
 \textit{Ciclo de Seminários em Matemática Aplicada e Ciência de Dados (CS-MACD).}\\
 title: ''Análise de dados COVID-19 em Portugal'', 7 de October 2022, UTAD.\\
 link: \href{https://sites.google.com/view/cs-macd/home}{https://sites.google.com/view/cs-macd/home}\\
+
+\subsubsection{Article review}
+Scientific Reports (ISSN 2045-2322), December 2022.
 
 
 \end{document}
