@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  28 DEC 2022 22:48
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  29 DEC 2022 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1382,14 +1382,8 @@ File: myfoto.jpg Graphic file (type bmp)
 File: insa_logo.jpg Graphic file (type bmp)
 <insa_logo.jpg>
 
-Overfull \hbox (9.1049pt too wide) in paragraph at lines 162--162
+Overfull \hbox (9.1049pt too wide) in paragraph at lines 166--166
 []|[]| 
- []
-
-File: utad_logo.jpg Graphic file (type bmp)
-<utad_logo.jpg>
-
-Overfull \vbox (1.11757pt too high) detected at line 173
  []
 
 File: utad_logo.jpg Graphic file (type bmp)
@@ -1398,81 +1392,83 @@ File: utad_logo.jpg Graphic file (type bmp)
 Overfull \vbox (1.11757pt too high) detected at line 177
  []
 
+File: utad_logo.jpg Graphic file (type bmp)
+<utad_logo.jpg>
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 185.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 195.
+Overfull \vbox (1.11757pt too high) detected at line 181
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 198.
+(hyperref)                removing `\faIcon' on input line 189.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 201.
+(hyperref)                removing `\faIcon' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\faIcon' on input line 205.
 
 [1
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 210.
+(hyperref)                removing `\faIcon' on input line 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 215.
+(hyperref)                removing `\faIcon' on input line 219.
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 230--231
+Underfull \hbox (badness 2443) in paragraph at lines 234--235
 []|\TU/Cambria(0)/m/it/10.95 Constantino Caetano, Maria Luísa Morgado, Paula Pa
 trício, Andreia Leite, Ausenda
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 216--242
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
 [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 216--242
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
 [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 216--242
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--242
+Underfull \hbox (badness 10000) in paragraph at lines 220--246
 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 216--242
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
 [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 244.
+(hyperref)                removing `\faIcon' on input line 248.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--254
+Underfull \hbox (badness 10000) in paragraph at lines 255--258
 
  []
 
 [2] (CV_JPereira.aux)
 Package rerunfilecheck Info: File `CV_JPereira.out' has not changed.
-(rerunfilecheck)             Checksum: 6889BB1653757792ADDD987E5E9E2666;2504.
+(rerunfilecheck)             Checksum: 675DD049FA3542159FD06562B9A6132F;2442.
 Package logreq Info: Writing requests to 'CV_JPereira.run.xml'.
 \openout1 = `CV_JPereira.run.xml'.
 
@@ -1480,7 +1476,7 @@ Package logreq Info: Writing requests to 'CV_JPereira.run.xml'.
 Here is how much of TeX's memory you used:
  38823 strings out of 410654
  804681 string characters out of 2819750
- 1565713 words of memory out of 3000000
+ 1565660 words of memory out of 3000000
  59333 multiletter control sequences out of 15000+600000
  473344 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
