@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  29 DEC 2022 22:14
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.10.4)  19 FEB 2023 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1386,83 +1386,88 @@ Overfull \hbox (9.1049pt too wide) in paragraph at lines 166--166
 []|[]| 
  []
 
-File: utad_logo.jpg Graphic file (type bmp)
-<utad_logo.jpg>
 
-Overfull \vbox (1.11757pt too high) detected at line 177
+Overfull \hbox (3.77602pt too wide) in paragraph at lines 172--173
+[]|\TU/Cambria(0)/b/n/8 Tasks| 
  []
 
 File: utad_logo.jpg Graphic file (type bmp)
 <utad_logo.jpg>
 
-Overfull \vbox (1.11757pt too high) detected at line 181
+Overfull \vbox (1.11757pt too high) detected at line 185
+ []
+
+File: utad_logo.jpg Graphic file (type bmp)
+<utad_logo.jpg>
+
+Overfull \vbox (1.11757pt too high) detected at line 190
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 189.
+(hyperref)                removing `\faIcon' on input line 199.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 202.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 205.
+(hyperref)                removing `\faIcon' on input line 214.
 
 [1
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 214.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\faIcon' on input line 219.
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 234--235
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\faIcon' on input line 230.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\faIcon' on input line 236.
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 252--253
 []|\TU/Cambria(0)/m/it/10.95 Constantino Caetano, Maria Luísa Morgado, Paula Pa
 trício, Andreia Leite, Ausenda
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 238--264
 [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 238--264
 [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 238--264
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--246
+Underfull \hbox (badness 10000) in paragraph at lines 238--264
 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 220--246
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 238--264
 [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\faIcon' on input line 248.
+(hyperref)                removing `\faIcon' on input line 266.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
 
  []
 
@@ -1475,8 +1480,8 @@ Package logreq Info: Writing requests to 'CV_JPereira.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  38823 strings out of 410654
- 804681 string characters out of 2819750
- 1565660 words of memory out of 3000000
+ 804678 string characters out of 2819750
+ 1567660 words of memory out of 3000000
  59333 multiletter control sequences out of 15000+600000
  473344 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
